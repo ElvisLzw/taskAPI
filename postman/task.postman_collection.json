@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "88991ebe-a825-4e40-b599-d702544ae9c8",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "task1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/sales/yearMonth?tenantId=A&dateFrom=2021-01-01&dateTo=2021-07-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sales",
+						"yearMonth"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "A"
+						},
+						{
+							"key": "dateFrom",
+							"value": "2021-01-01"
+						},
+						{
+							"key": "dateTo",
+							"value": "2021-07-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/sales/salesAccounts?tenantId=A&dateFrom=2021-01-01&dateTo=2021-07-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sales",
+						"salesAccounts"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "A"
+						},
+						{
+							"key": "dateFrom",
+							"value": "2021-01-01"
+						},
+						{
+							"key": "dateTo",
+							"value": "2021-07-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task1_without_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/sales/yearMonth?tenantId=&dateFrom=2021-01-01&dateTo=2021-07-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sales",
+						"yearMonth"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": ""
+						},
+						{
+							"key": "dateFrom",
+							"value": "2021-01-01"
+						},
+						{
+							"key": "dateTo",
+							"value": "2021-07-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task2_without_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/sales/salesAccounts?tenantId=&dateFrom=2021-01-01&dateTo=2021-07-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sales",
+						"salesAccounts"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": ""
+						},
+						{
+							"key": "dateFrom",
+							"value": "2021-01-01"
+						},
+						{
+							"key": "dateTo",
+							"value": "2021-07-31"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
